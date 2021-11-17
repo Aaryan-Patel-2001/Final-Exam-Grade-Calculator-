@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="stylesheet.css">
+ <title>Final Exam Grade Calculator</title>
+</head>
+<body>
+
+<!-- form for taking input from user -->
+<div class="form" >
+ <form action="/computation.js" method="get" id="finalGrade">
+  <label for="currentGrade">Current Grade</label>
+  <input type="number" id="currentGrade" name="currentGrade"><br> <br>
+  <label for="targetGrade">Target Grade</label>
+  <input type="number" id="targetGrade" name="targetGrade"><br><br>
+  <label for="finalWeightage">Final Exam Weightage</label>
+  <input type="number" id="finalWeightage" name="finalWeightage"> <br><br><br><br>
+  <input type="submit" id="Submit" value="Calculate" style="width: 50%; height: 400%; padding: 15px 32px; background-color: crimson; color: white; cursor: pointer;"><br><br>
+  <input type="reset" id="Reset" style="width: 50%; height: 400%; padding: 15px 32px; background-color: crimson; color: white; cursor: pointer;"> 
+ </form>
+</div>
+<font size='5'><b><center><p id="resultDisplay"></p></center></b></font>
+<script src="computation.js"></script>
+</body>
+</html>
